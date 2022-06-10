@@ -792,6 +792,10 @@ section {
   padding: 0 !important;
 }
 
+.contact-content-con .contact-info .contact-item p:hover a {
+  text-decoration: underline;
+}
+
 .btn-con {
   display: -webkit-box;
   display: -ms-flexbox;
