@@ -217,19 +217,18 @@
     //go up from side
     .active {
         display: block;
-        transform: translateX(0) scaleX(1);
         animation: appear 2s ease-in-out;
         @keyframes appear {
-            0%{ transform: translateX(100em) scaleX(1); }
-            100%{ transform: translateX(0) scaleX(1); }
+            0%{ transform: translateX(-100%); }
+            100%{ transform: translateX(0); }
         }
     }
 
     .hide{
         animation: hidden 1s ease-in-out;
         @keyframes hidden {
-            0%{ transform: translateX(0) scaleX(1); }
-            100%{ transform: translateX(-100%) scaleX(1); }
+            0%{ transform: translateX(0); }
+            100%{ transform: translateX(-100%); }
         }
     }
 

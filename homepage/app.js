@@ -32,7 +32,6 @@ function PageTransitions(){
         const id = e.target.dataset.id;
         if(id){
             let targetElement = e.target.parentNode;
-            console.log(targetElement);
             if (targetElement.id == 'controls') {
                 sections.forEach((section)=>{
                     if(section.classList.contains('active')){

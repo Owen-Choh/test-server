@@ -393,7 +393,7 @@ section {
             position: relative;
             max-width: 1500px;
             margin: 0 auto;
-            transition: var(--transition-inout);   
+            transition: var(--transition-inout);
             /* The actual timeline (the vertical ruler) */
             &::after {
                 content: '';
@@ -419,7 +419,12 @@ section {
         }
         .active-timeline{
             display: block;
-            transition: var(--transition-inout);   
+            
+            animation: fade-in 1s ease-in-out;
+            @keyframes fade-in {
+                0%{ opacity: 0; }
+                100%{ opacity: 1; }
+            }
         }
           
         /* Container around content */
@@ -595,6 +600,7 @@ section {
             display: flex;
             align-items: center;
             justify-content: center;
+            text-align: center;
             span{
                 color: var(--color-secondary);
             }
